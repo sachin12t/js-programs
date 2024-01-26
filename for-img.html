@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<style>
+			#box{
+				height:300px;
+				width:300px;
+				border:2px solid #f00;
+				margin:0px auto;
+			}
+			#sbox{
+				height:200px ;
+				width:23%;
+				border:2px solid #f0f;
+				display:inline-black;
+				margin:10px;
+			}
+		#simg{
+				height:100%;
+				width:100%;
+			}
+				 #mimg{
+				height:100%;
+				width:100%;
+			}
+			.conte{
+				display:flex;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			 <img src="img/b.jpg" id="mimg">
+		</div>
+		<div class="conte">
+		<div id="sbox" onclick="demo(this)"> <img src="img/about.jpg" id="simg"></div>
+		<div id="sbox" onclick="demo(this)"> <img src="img/blog-1.jpg" id="simg"></div>
+		<div id="sbox" onclick="demo(this)"> <img src="img/blog-2.jpg" id="simg"></div>
+		<div id="sbox" onclick="demo(this)"> <img src="img/blog-3.jpg" id="simg"></div>
+		</div>
+	<script>
+		function demo(b){//image swapping  
+			var a=document.getElementById("box").innerHTML;
+			document.getElementById("box").innerHTML=b.innerHTML;
+			b.innerHTML=a;
+       }
+
+
+</script>
+	</body>
+</html>
+
